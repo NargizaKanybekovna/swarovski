@@ -6,17 +6,22 @@ function Home() {
     <>
       <div className="Home">
         <img src={homeImg} alt="" />
+        <video width="100%" height="auto" controls autoPlay muted loop>
+          <source src={video} type="video/mp4" />
+          <button className='Btn flex'></button>
+        </video>
         <div className="container">
           <div className="home_img">
 
-            <video width="100%" height="auto" controls autoPlay muted loop>
-              <source src={video} type="video/mp4" />
-              <button className='Btn flex'></button>
-            </video>
+
           </div>
         </div>
       </div>
-      <section >
+      <section className="Info_grey">
+        <div className="container">
+          <h1 className="Info_tit">Masters of Light Since 1895</h1>
+          <p className="Info_txt">Since 1895, founder Daniel Swarovski’s passion for innovation and design, and mastery of crystal cutting has defined Swarovski as the leading jewelry and accessories brand.</p>
+        </div>
 
       </section>
 

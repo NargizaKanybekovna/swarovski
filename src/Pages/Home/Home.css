@@ -1,0 +1,21 @@
+.Info_grey {
+    background: #f0eee4;
+
+}
+
+.Info_tit {
+    font-size: 40px;
+    text-align: center;
+    font-family: "ITCNovareseMed", sans-serif !important;
+
+}
+
+.Info_txt {
+    font-size: 25px;
+    font-size: 1.6rem;
+    letter-spacing: .04rem;
+    line-height: 160%;
+    margin-top: 30px;
+    text-align: center;
+    
+}
