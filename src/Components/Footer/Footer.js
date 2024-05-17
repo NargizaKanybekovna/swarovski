@@ -52,8 +52,7 @@ function Footer() {
           </div>
 
         </div>
-      
-      <hr />
+            <hr />
       <div className="footer_content flex">
         <Link to="" className="footer_icon"></Link>
         <Link to="" className="">Other Countries / Regions | en</Link>
