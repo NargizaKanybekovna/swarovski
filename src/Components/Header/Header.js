@@ -18,13 +18,13 @@ function Header() {
           </div>
           <nav>
             <ul className='menu_list flex'>
-              <li><a href="">Новое в</a></li>
-              <li><a href="">Ювелирные изделия</a></li>
-              <li><a href="">Часы</a></li>
-              <li><a href="">Аксессуары</a></li>
-              <li><a href="">Украшения</a></li>
-              <li><a href="">Дары</a></li>
-              <li><a href="">Мир Сваровски</a></li>
+              <li><a href="">New In</a></li>
+              <li><a href="">Jewelry</a></li>
+              <li><a href="">Watches</a></li>
+              <li><a href="">Accessories</a></li>
+              <li><a href="">Decorations</a></li>
+              <li><a href="">Gifts</a></li>
+              <li><a href="">World of Swarovski</a></li>
               <div className="icon"></div>
             </ul>
           </nav>
