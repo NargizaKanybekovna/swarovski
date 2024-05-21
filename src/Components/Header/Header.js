@@ -12,32 +12,32 @@ function Header() {
         <div className="Head flex">
           <div>
             <div className='BrandLogo_img'>
-              <a href=""><img src={LogoImg} alt="" /></a>
+              <Link to=""><img src={LogoImg} alt="" /></Link>
               
             </div>
           </div>
           <nav>
             <ul className='menu_list flex'>
-              <li><a href="">New In</a></li>
-              <li><a href="">Jewelry</a></li>
-              <li><a href="">Watches</a></li>
-              <li><a href="">Accessories</a></li>
-              <li><a href="">Decorations</a></li>
-              <li><a href="">Gifts</a></li>
-              <li><a href="">World of Swarovski</a></li>
+              <li><Link to="">New In</Link></li>
+              <li><Link to="">Jewelry</Link></li>
+              <li><Link to="">Watches</Link></li>
+              <li><Link to="">Accessories</Link></li>
+              <li><Link to="">Decorations</Link></li>
+              <li><Link to="">Gifts</Link></li>
+              <li><Link to="">World of Swarovski</Link></li>
               <div className="icon"></div>
             </ul>
           </nav>
-
-          <Logo />
+          {/* <Logo />
           <Menu />
           <div className="Buttons flex">
             <Button>Login</Button>
             <Button>Sign In</Button>
           </div>
           <Link to="/cart" className="Cart_ic">
-            <span>10</span>
-          </Link>
+            <span></span>
+          </Link> */}
+          
         </div>
       </div>
 
