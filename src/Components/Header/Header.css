@@ -13,8 +13,11 @@
     width: 950px;
     color: aliceblue;
     font-size: 15px;
-}
 
+}
+.menu_list{
+    background: url();
+}
 .Head {
     flex-direction: column;
     align-items: center;
@@ -24,4 +27,7 @@
     margin-bottom: 20px;
     max-width: 500px;
     transition: 0.3s
+}
+.menu_list_icon{
+    background: url();
 }

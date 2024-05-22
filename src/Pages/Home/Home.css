@@ -2,17 +2,16 @@
     background: #f0eee4;
 
 }
-
 .Info_tit {
     font-size: 40px;
     text-align: center;
-    font-family: "ITCNovareseMed", sans-serif !important;
+    font-family: "ITCNovareseMed", sans-serif;
+    margin-bottom: 5px;
 
 }
 
 .Info_txt {
     font-size: 25px;
-    font-size: 1.6rem;
     letter-spacing: .04rem;
     line-height: 160%;
     margin-top: 30px;
@@ -20,7 +19,7 @@
     
 }
 .Card_in{
-    width: calc((100%-75px) / 3);
+    width: calc((100%-75px) / 3px);
     margin: 0 auto;
 }
 
@@ -43,10 +42,14 @@
 }
 .Category_grey{
     background: #f0eee4;
-    width: calc((100% - 25px) / 4px);
+    width: calc((100%-25px) / 4px);
 
 }
 .Category_img{
     width: 280px;
     margin-top: 80px;
+}
+.About{
+    background: white;
+    
 }

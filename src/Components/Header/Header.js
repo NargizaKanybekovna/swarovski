@@ -3,7 +3,7 @@ import Menu from '../Menu/Menu';
 import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
 import { Link } from 'react-router-dom'
-import LogoImg from'..//..//img/swa-brandlogo-icon-small-white.svg'
+import LogoImg from '..//..//img/swa-brandlogo-icon-small-white.svg'
 
 function Header() {
   return (
@@ -11,13 +11,13 @@ function Header() {
       <div className="container">
         <div className="Head flex">
           <div>
-            <div className='BrandLogo_img'>
-              <Link to=""><img src={LogoImg} alt="" /></Link>
-              
+            <div className="BrandLogo_img">
+              <Link to="" className="BrandLogo_img"><img src={LogoImg} alt="" /></Link>
+
             </div>
           </div>
           <nav>
-            <ul className='menu_list flex'>
+            <ul className="menu_list flex">
               <li><Link to="">New In</Link></li>
               <li><Link to="">Jewelry</Link></li>
               <li><Link to="">Watches</Link></li>
@@ -25,7 +25,7 @@ function Header() {
               <li><Link to="">Decorations</Link></li>
               <li><Link to="">Gifts</Link></li>
               <li><Link to="">World of Swarovski</Link></li>
-              <div className="icon"></div>
+              <Link to=""><div className="icon"></div></Link>
             </ul>
           </nav>
           {/* <Logo />
@@ -37,7 +37,7 @@ function Header() {
           <Link to="/cart" className="Cart_ic">
             <span></span>
           </Link> */}
-          
+
         </div>
       </div>
 

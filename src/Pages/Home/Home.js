@@ -9,6 +9,9 @@ import categoryimg1 from '..//../img/categoryimg1.avif'
 import categoryimg2 from '..//../img/categoryimg2.avif'
 import categoryimg3 from '..//../img/categoryimg3.avif'
 import categoryimg4 from '..//../img/categoryimg4.avif'
+import aboutvideo1 from '..//../img/aboutvideo1.mp4'
+import aboutvideo2 from '..//../img/aboutvideo2.mp4'
+import aboutvideo3 from '..//..//img/aboutvideo3.mp4'
 
 function Home() {
   return (
@@ -17,7 +20,12 @@ function Home() {
         <img src={homeImg} alt="" />
         <video width="100%" height="auto" controls autoPlay muted loop>
           <source src={video} type="video/mp4" />
-          <button className='Btn flex'></button>
+          <h2 className="Home_tit">Sping/Summer 2024</h2>
+          <h3 className="Home_txt">Embrace the art of self-expression </h3>
+          <div className="button flex">
+            <button className="btn">Discover more</button>
+            <button className="btn">Read me</button>
+          </div>
         </video>
         <div className="container">
           <div className="home_img">
@@ -31,7 +39,7 @@ function Home() {
         </div>
       </section>
       <section className="Cards">
-        <h1 className="Card_tit">Infinitely Inspiring</h1>
+        <h1 className="Info_tit">Infinitely Inspiring</h1>
         <div className="Card_in flex">
           <div className="Card">
             <div className='card_img'>
@@ -77,41 +85,27 @@ function Home() {
                 <Link to="" className="categoryimg1"><img src={categoryimg1} alt="" />Jewelry</Link>
               </div>
               <div className="Category_img">
-                <Link to="" className="categoryimg2"><img src={categoryimg2} alt="" />Jewelry</Link>
+                <Link to="" className="categoryimg2"><img src={categoryimg2} alt="" />Watches</Link>
               </div>
               <div className="Category_img">
-                <Link to="" className="categoryimg3"><img src={categoryimg3} alt="" />Jewelry</Link>
+                <Link to="" className="categoryimg3"><img src={categoryimg3} alt="" />Decorations</Link>
               </div>
               <div className="Category_img">
-                <Link to="" className="categoryimg4"><img src={categoryimg4} alt="" />Jewelry</Link>
+                <Link to="" className="categoryimg4"><img src={categoryimg4} alt="" />Accessories</Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="About">
-        <div className="container">
-          <div className="About_Swarovski">
-            <h1 className="Info_tit">World of Swarovski</h1>
-            <p className="Info_txt">Illuminating the many facets of Swarovski from heritage to lifestyle and beyond.</p>
-            <button className="btn">Explore all</button>
-            <div className='About_video flex'>
+      111
 
 
 
-            <h1 className="Card_tit">Radiant Necklaces</h1>
-            <p className="card_txt">Channeled into sculptural forms, fluid crystals are a beautiful expression of Swarovski savoir-faire. Take the modern route to styling with minimalist chains that gleam with your every move.</p>
-            <div className="button">
-              <button className="btn">Discover more</button>
-            </div>    
-            </div>
-          </div>
-        </div>
-      </section >
 
-      <section className=''>
+      <section>
 
       </section>
+
 
     </>
 

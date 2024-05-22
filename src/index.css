@@ -61,9 +61,6 @@ input::placeholder {
 	color: inherit;
 }
 
-button {
-	cursor: pointer;
-}
 
 input,
 textarea {
@@ -120,25 +117,23 @@ section {
 }
 
 .btn {
-
-
-	font-weight: 400;
-
 	line-height: 19px;
 	text-align: center;
 	text-transform: uppercase;
 	color: black;
-	height: 85px;
+	height: 60px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	padding: 14px 0;
+	border-radius: 15px;
 	transition: 0.3s;
 }
 
-.btn:hover {}
+.btn:hover {
+	color: white;
+	background: black;
+}
 
 .link {
 	transition: 0.3s;
