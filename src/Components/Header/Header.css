@@ -10,24 +10,32 @@
 }
 
 .menu_list {
-    width: 950px;
+    width: 1000px;
     color: aliceblue;
     font-size: 15px;
 
 }
-.menu_list{
-    background: url();
+.btn_menu{
+    background: white;
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
 }
+.btn_black{
+    background: rgba(22, 18, 18, 0.3);;
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    color: white;
+}
+
 .Head {
     flex-direction: column;
     align-items: center;
 }
 
 .BrandLogo_img {
-    margin-bottom: 20px;
-    max-width: 500px;
+    margin-bottom: 10px;
+    max-width: 600px;
     transition: 0.3s
-}
-.menu_list_icon{
-    background: url();
 }

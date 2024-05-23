@@ -7,34 +7,70 @@ import Contacts from './Pages/Contacts/Contacts';
 import Order from './Pages/Order/Order';
 import Delivery from './Pages/Delivery/Delivery';
 import Cart from './Pages/Cart/Cart';
+
 import NotFound from './Pages/NotFound/NotFound';
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from 'react-router-dom'
-
+import { Cart } from "./Pages/Cart/Cart";
+import { createContext, useEffect, useState } from 'react';
+import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad } from "./firebase";
+export const AppConetext = createContext({
+  categories: [],
+  products: [],
+  order: [],
+  cart: [],
+  setCart: () => { },
+  user: null,
+});
 
 function App() {
-  return (
-    <div className='App'>
-      <Router>
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="contacts" element={<Contacts />} />
-            <Route path="order" element={<Order />} />
-            <Route path="delivery" element={<Delivery />} />
-            <Route path="cart" element={<Cart />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </main>
-        <Footer />
-      </Router>
-    </div>
-  );
-}
+  const [categories, setCategories] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [orders, setOrders] = useState([]);
+  const [cart, setCart] = useState(() => {
+    return JSON.parse(localStorage.getItem("cart")) || {};
 
-export default App;
+  });
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+  useEffect(() => {
+    onCategoriesLoad(setCategories);
+    onProductsLoad(setProducts);
+    onOrdersLoad(setOrders);
+    onAuthChange(user => {
+      if (user) {
+        user.isAdmin = user && user.email === "kanybekovnanargiza19@gmail.com";
+      }
+      setUser(user);
+    })
+  }, []);
+
+
+  
+    return (
+      <div className='App'>
+        <Router>
+          <Header />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="contacts" element={<Contacts />} />
+              <Route path="order" element={<Order />} />
+              <Route path="delivery" element={<Delivery />} />
+              <Route path="cart" element={<Cart />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <Footer />
+        </Router>
+      </div>
+    );
+  }
+
+  export default App;

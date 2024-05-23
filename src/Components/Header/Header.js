@@ -11,8 +11,22 @@ function Header() {
       <div className="container">
         <div className="Head flex">
           <div>
-            <div className="BrandLogo_img">
+            <div className="BrandLogo_img flex">
               <Link to="" className="BrandLogo_img"><img src={LogoImg} alt="" /></Link>
+              <nav>
+                <ul className="menu_list flex">
+                  <li><Link to="">Home</Link></li>
+                  <li><Link to="">About</Link></li>
+                  <li><Link to="">Contatcs</Link></li>
+                  <li><Link to="">Cart</Link></li>
+                  <li><Link to="">Delivery</Link></li>
+                  <div className="button flex">
+                    <button className="btn_menu">saerch</button>
+                    <button className="btn_black">Sign in</button>
+                  </div>
+                </ul>
+              </nav>
+
 
             </div>
           </div>
@@ -25,9 +39,10 @@ function Header() {
               <li><Link to="">Decorations</Link></li>
               <li><Link to="">Gifts</Link></li>
               <li><Link to="">World of Swarovski</Link></li>
-              <Link to=""><div className="icon"></div></Link>
             </ul>
           </nav>
+
+
           {/* <Logo />
           <Menu />
           <div className="Buttons flex">
