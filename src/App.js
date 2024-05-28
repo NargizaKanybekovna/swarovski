@@ -20,12 +20,12 @@ import { createContext, useEffect, useState } from 'react';
 import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad } from "./firebase";
 import CategoryList from './Components/CategoryList/CategoryList';
 export const AppContext = createContext({
-  categories: [],
-  products: [],
-  order: [],
-  cart: [],
-  setCart: () => { },
-  user: null,
+  categories:[],
+  products:[],
+  order:[],
+  cart:[],
+  setCart:()=>{ },
+  user:null,
 });
 
 function App() {
