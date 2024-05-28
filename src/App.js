@@ -6,7 +6,8 @@ import Home from './Pages/Home/Home';
 import Contacts from './Pages/Contacts/Contacts';
 import Order from './Pages/Order/Order';
 import Delivery from './Pages/Delivery/Delivery';
-import Cart from './Pages/Cart/Cart';
+
+
 
 import NotFound from './Pages/NotFound/NotFound';
 import {
@@ -14,10 +15,11 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
-import { Cart } from "./Pages/Cart/Cart";
+import  Cart  from "./Pages/Cart/Cart";
 import { createContext, useEffect, useState } from 'react';
 import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad } from "./firebase";
-export const AppConetext = createContext({
+import CategoryList from './Components/CategoryList/CategoryList';
+export const AppContext = createContext({
   categories: [],
   products: [],
   order: [],
@@ -51,26 +53,29 @@ function App() {
   }, []);
 
 
-  
-    return (
-      <div className='App'>
-        <Router>
-          <Header />
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="about" element={<About />} />
-              <Route path="contacts" element={<Contacts />} />
-              <Route path="order" element={<Order />} />
-              <Route path="delivery" element={<Delivery />} />
-              <Route path="cart" element={<Cart />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-        </Router>
-      </div>
-    );
-  }
 
-  export default App;
+  return (
+    <div className='App'>
+      <AppContext.Provider value={{ categories, cart, user, orders }} >
+      <Router>
+        <Header />
+        <CategoryList />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="contacts" element={<Contacts />} />
+            <Route path="order" element={<Order />} />
+            <Route path="delivery" element={<Delivery />} />
+            <Route path="cart" element={<Cart />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
+      </AppContext.Provider>
+    </div>
+  );
+}
+
+export default App;

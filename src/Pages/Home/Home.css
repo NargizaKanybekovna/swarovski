@@ -2,6 +2,7 @@
     background: #f0eee4;
 
 }
+
 .Info_tit {
     font-size: 40px;
     text-align: center;
@@ -16,40 +17,79 @@
     line-height: 160%;
     margin-top: 30px;
     text-align: center;
-    
+
 }
-.Card_in{
+
+.Card_in {
     width: calc((100%-75px) / 3px);
     margin: 0 auto;
 }
 
-.card_img{
+.card_img {
     width: 450px;
     margin: 0 auto;
 }
-.Card_tit{
+
+.Card_tit {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 15px;
 }
-.card_txt{
+
+.card_txt {
     width: 400px;
     font-size: 20px;
     line-height: 30px;
     margin-top: 40px;
-    
+
     margin: 0 auto;
 }
-.Category_grey{
+
+.Category_grey {
     background: #f0eee4;
     width: calc((100%-25px) / 4px);
 
 }
-.Category_img{
+
+.Category_img {
     width: 280px;
     margin-top: 80px;
 }
-.About{
+
+.About {
     background: white;
-    
+
+}
+.Home{
+    position: relative;
+    width:100%;
+    overflow: hidden;
+    padding-top: 0;
+}
+.video_container{
+    position: relative;
+    width: 100;
+    height: 100%;
+}
+.video{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.btn_home {
+    position: absolute;
+    bottom: 154px;
+    right: 75px;
+    background-color: black;
+    color: white;
+    padding: 10px 70px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px;
+    width: auto;
+    text-transform: uppercase;
+
 }

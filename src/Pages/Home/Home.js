@@ -24,16 +24,18 @@ function Home() {
   return (
     <>
       <div className="Home">
-        <img src={homeImg} alt="" />
-        <video width="100%" height="auto" controls autoPlay muted loop>
+        <div className="video_container">
+          <img src={homeImg} alt="" />
+          <video width="100%" height="auto" controls autoPlay muted loop> </video>
           <source src={video} type="video/mp4" />
           <h2 className="Home_tit">Sping/Summer 2024</h2>
           <h3 className="Home_txt">Embrace the art of self-expression </h3>
-          <div className="button flex">
-            <button className="btn">Discover more</button>
-            <button className="btn">Read me</button>
+          <div className="button">
+            <button className="btn_home">Discover more</button>
+            <button className="btn_home">Read me</button>
           </div>
-        </video>
+        </div>
+
         <div className="container">
           <div className="home_img">
           </div>
@@ -139,8 +141,8 @@ function Home() {
 
       </section >
       <div className="Home_slider">
-        <Swiper 
-          spaceBetween={10} 
+        <Swiper
+          spaceBetween={10}
           slidesPerView={2}
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           navigation
@@ -197,7 +199,7 @@ function Home() {
           </SwiperSlide>
         </Swiper>
       </div>
-    
+
 
 
 
