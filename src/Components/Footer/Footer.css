@@ -36,11 +36,12 @@ footer {
 
 }
 .footer_end{
+    width: 900px;
 margin-top: 65px;
 }
 .footer_title {
     width: 250px;
-    line-height: 30px;
+    line-height:15px;
 
 }
 
@@ -51,4 +52,7 @@ margin-top: 65px;
 }
 .footer_ic:hover{
     transition: scale(1.1);
+}
+.footer_logo{
+    width: 300px;
 }

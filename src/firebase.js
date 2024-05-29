@@ -4,13 +4,13 @@ import { GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithPopup, signO
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCEHB9jS3t8J8P_SlLwU-e0YWa7-3Ffrl4",
-    authDomain: "swarovski-2799a.firebaseapp.com",
-    projectId: "swarovski-2799a",
-    storageBucket: "swarovski-2799a.appspot.com",
-    messagingSenderId: "254812280918",
-    appId: "1:254812280918:web:80c340175ddfcf690c43f7"
-  };
+  apiKey: "AIzaSyAjP55jCGNYb-38fzw8oiJ2c311ia7DW3k",
+  authDomain: "swarowskii-3bc8c.firebaseapp.com",
+  projectId: "swarowskii-3bc8c",
+  storageBucket: "swarowskii-3bc8c.appspot.com",
+  messagingSenderId: "10007815928",
+  appId: "1:10007815928:web:e99dce37d7f1905e843d0d"
+};
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
@@ -55,7 +55,7 @@ export const onOrdersLoad = (callback) =>
   );
 
 export const uploadProductPhoto = (file) => {
-  const storageRef = ref(storage,`products/${file.name}`);
+  const storageRef = ref(storage, `products/${file.name}`);
   return uploadBytes(storageRef, file)
     .then(() => {
       return getDownloadURL(storageRef);

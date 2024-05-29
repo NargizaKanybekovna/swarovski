@@ -4,6 +4,7 @@ import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
 import { Link } from 'react-router-dom'
 import LogoImg from '..//..//img/swa-brandlogo-icon-small-white.svg'
+import CategoryList from '../CategoryList/CategoryList'
 
 function Header() {
   return (
@@ -15,11 +16,11 @@ function Header() {
               <Link to="" className="BrandLogo_img"><img src={LogoImg} alt="" /></Link>
               <nav>
                 <ul className="menu_list flex">
-                  <li><Link to="">Home</Link></li>
-                  <li><Link to="">About</Link></li>
-                  <li><Link to="">Contatcs</Link></li>
-                  <li><Link to="">Cart</Link></li>
-                  <li><Link to="">Delivery</Link></li>
+                  <li><Link to="./">Home</Link></li>
+                  <li><Link to="./about">About</Link></li>
+                  <li><Link to="./contacts">Contatcs</Link></li>
+                  <li><Link to="./cart">Cart</Link></li>
+                  <li><Link to="./delivery">Delivery</Link></li>
                   <div className="button flex">
                     <button className="btn_menu">saerch</button>
                     <button className="btn_black">Sign in</button>
@@ -31,15 +32,7 @@ function Header() {
             </div>
           </div>
           <nav>
-            <ul className="menu_list flex">
-              <li><Link to="">New In</Link></li>
-              <li><Link to="">Jewelry</Link></li>
-              <li><Link to="">Watches</Link></li>
-              <li><Link to="">Accessories</Link></li>
-              <li><Link to="">Decorations</Link></li>
-              <li><Link to="">Gifts</Link></li>
-              <li><Link to="">World of Swarovski</Link></li>
-            </ul>
+            <CategoryList />
           </nav>
 
 
