@@ -3,13 +3,12 @@ import { Link } from 'react-router-dom';
 import cardimg1 from '..//../img/cardimg1.avif'
 import cardimg2 from '..//../img/cardimg2.avif'
 import cardimg3 from '..//../img/cardimg3.avif'
-import aboutvideo1 from '..//../img/aboutvideo1.mp4'
-import aboutvideo2 from '..//../img/aboutvideo2.mp4'
-import aboutvideo3 from '..//..//img/aboutvideo3.mp4'
+import milleniaimg from '..//..//img/milleniaimg.avif'
+
 function About() {
   return (
     <>
-    <section className="Cards">
+      <section className="Cards">
         <h1 className="Info_tit">Infinitely Inspiring</h1>
         <div className="Card_in flex">
           <div className="Card">
@@ -46,40 +45,27 @@ function About() {
           </div>
         </div>
       </section>
-       <section className="About">
+
+
+      <section className="World of Swarovski">
         <div className="container">
-          <h1 className="Info_tit">World of Swarovski</h1>
-          <p className="Info_txt">Illuminating the many facets of Swarovski from heritage to lifestyle and beyond.</p>
-          <button className="btn">Explore all</button>
-          <div className="About_video flex">
-            <div className="Video_card">
-              <video width="100%" height="100%" controls autoPlay muted loop> <source src={aboutvideo1} type="aboutvideo1.mp4" />  </video>
-              <h1 className="Card_tit">Ocean-Inspired Jewelry</h1>
-              <p className="card_txt">Our new jewelry families are beautiful works of artistry that feature Swarovski Crystal Pearls, and a palette of blue and green Swarovski Crystals. </p>
-              <div className="button">
-                <button className="btn">Read me</button>
-              </div>
-            </div>
-            <div className="Video_card">
-              <video width="100%" height="100%" controls autoPlay muted loop> <source src={aboutvideo2} type="aboutvideo2.mp4" />  </video>
-              <h1 className="Card_tit">A Guide to Watch Styles</h1>
-              <p className="card_txt">The perfect blend of fashion and function, watches have the power to elevate any look. </p>
-              <div className="button">
-                <button className="btn">Read me</button>
-              </div>
-            </div>
-            <div className="Video_card">
-              <video width="100%" height="100%" controls autoPlay muted loop> <source src={aboutvideo3} type="aboutvideo3.mp4" />  </video>
-              <h1 className="Card_tit">Disney’s Alice in Wonderland and friends</h1>
-              <p className="card_txt">This collection celebrates the irresistible spirit of Disney’s iconic characters, reimagining Alice in Wonderland and her friends with impeccable crystal savoir-faire. </p>
-              <div className="button">
-                <button className="btn">Read me</button>
-              </div>
-            </div>
+          <h1 className="Word_tit">World of Swarovski</h1>
+          <p className="Word_txt">Illuminating the many facets of Swarovski from heritage to lifestyle and beyond. </p>
+          <p className="word_desc">Highlights</p>
+          <div className="word_img">
+            <Link to="" className="word_img"> <img src={milleniaimg} alt="" /></Link>
           </div>
+          <h2 className="world_txt">Millenia</h2>
+          <h3 className="world_txt">A love letter to crystal</h3>
+          <div className="button">
+              <button className="btn_word">Read more</button>
+            </div>
+
+
+
         </div>
 
-      </section >
+      </section>
     </>
   );
 }

@@ -1,0 +1,45 @@
+.btn_word {
+    width: 15%;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+    transition: 0.5s;
+    margin-top: 10px;
+}
+
+.btn_word:hover {
+    color: white;
+    background: black;
+}
+
+.Word_tit {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+
+}
+
+.Word_txt {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.word_desc {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.word_img {
+    margin-bottom: 40px;
+}
+
+.world_txt {
+    margin-bottom: 15px;
+}

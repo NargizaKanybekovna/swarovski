@@ -87,7 +87,7 @@
     padding: 10px 70px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition:  0.3s, color 0.3s;
     font-size: 14px;
     width: auto;
     text-transform: uppercase;
